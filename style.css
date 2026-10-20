@@ -269,3 +269,23 @@ footer {
   text-align: center;
   font-size: 0.85rem;
 }
+
+.tribute-figure {
+  margin: 2.5rem auto 0;
+  text-align: center;
+}
+
+.tribute-figure img {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: inline-block;
+}
+
+.tribute-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
