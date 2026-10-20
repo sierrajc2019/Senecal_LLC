@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Realty | Premier Local Real Estate</title>
+  <meta name="description" content="Discover residential and commercial properties with Apex Realty. Contact our team today.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">Apex<span>Realty</span></a>
+      <nav>
+        <a href="#properties">Listings</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-nav">Contact Agent</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Find Your Next Property With Confidence</h1>
+      <p>Specializing in residential sales, acquisitions, and local market analysis.</p>
+      <a href="#properties" class="btn-primary">View Featured Listings</a>
+    </div>
+  </section>
+
+  <section id="properties" class="container section">
+    <h2>Featured Listings</h2>
+    <div class="listings-grid">
+      
+      <article class="property-card">
+        <div class="image-placeholder">Property Photo 1</img>
+        <div class="card-details">
+          <span class="price">$589,000</span>
+          <h3>1042 Maple Ridge Drive</h3>
+          <p class="specs">4 Beds | 3 Baths | 2,450 SqFt</p>
+          <a href="#contact" class="btn-secondary">Request Tour</a>
+        </div>
+      </article>
+
+      <article class="property-card">
+        <div class="image-placeholder">Property Photo 2</img>
+        <div class="card-details">
+          <span class="price">$425,000</span>
+          <h3>780 Harbor View Ave, Unit 4B</h3>
+          <p class="specs">2 Beds | 2 Baths | 1,180 SqFt</p>
+          <a href="#contact" class="btn-secondary">Request Tour</a>
+        </div>
+      </article>
+
+      <article class="property-card">
+        <div class="image-placeholder">Property Photo 3</img>
+        <div class="card-details">
+          <span class="price">$815,000</span>
+          <h3>214 Old Mill Creek Lane</h3>
+          <p class="specs">5 Beds | 4 Baths | 3,800 SqFt</p>
+          <a href="#contact" class="btn-secondary">Request Tour</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container about-content">
+      <h2>About Our Brokerage</h2>
+      <p>Apex Realty delivers dedicated client representation throughout every stage of the transaction. From comparative market analyses to closing negotiations, we ensure full transparency and seamless execution.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container section">
+    <div class="form-container">
+      <h2>Schedule a Consultation</h2>
+      <p>Submit your details and an agent will reach out within 24 hours.</p>
+      
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="d6465a21-4f79-45e8-9057-900283a84bf7">
+        <input type="hidden" name="subject" value="New Real Estate Lead from Website">
+        <input type="checkbox" name="botcheck" style="display: none;">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="inquiry">Property or Inquiry Type</label>
+          <select id="inquiry" name="inquiry">
+            <option value="buying">Looking to Buy</option>
+            <option value="selling">Looking to Sell</option>
+            <option value="tour">Tour a Specific Listing</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Mention property address or timeline..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary full-width">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Apex Realty LLC. Equal Housing Opportunity.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
