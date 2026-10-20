@@ -78,12 +78,11 @@ nav a:hover {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)), url('./images/hero.jpg');
-  background-position: center;
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('images/hero.jpg');
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--secondary);
-  color: #fff;
+  color: #ffffff;
   padding: 5rem 0;
 }
 
