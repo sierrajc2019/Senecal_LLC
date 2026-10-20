@@ -6,6 +6,7 @@
   <title>Senecal Realty LLC | Nantucket Vacation Rentals</title>
   <meta name="description" content="Generational island hospitality and curated vacation rentals on Nantucket.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
 
@@ -118,6 +119,9 @@
           <label for="message">Target Dates & Guest Count</label>
           <textarea id="message" name="message" rows="4" placeholder="Desired weeks (e.g. July 11–18), party size, special requests..."></textarea>
         </div>
+
+               <!-- Cloudflare Turnstile -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAFeG9vWpe1HVOB8Z" style="margin-bottom: 1.25rem;"></div>
 
         <button type="submit" class="btn-primary full-width">Send Rental Inquiry</button>
       </form>
