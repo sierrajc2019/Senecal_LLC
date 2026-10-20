@@ -210,6 +210,26 @@ nav a:hover {
   font-size: 1.1rem;
 }
 
+.about-photo {
+  margin-top: 2rem;
+}
+
+.about-photo img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-photo figcaption {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
 .form-container {
   max-width: 550px;
   margin: 0 auto;
