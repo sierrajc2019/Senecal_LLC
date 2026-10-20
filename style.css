@@ -78,23 +78,54 @@ nav a:hover {
 }
 
 .hero {
-  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('images/hero.jpg') center/cover no-repeat;
+  background-color: var(--secondary);
   color: #fff;
-  padding: 6rem 0;
-  text-align: center;
+  padding: 5rem 0;
 }
 
-.hero-content h1 {
+.hero-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.hero-large-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
   font-size: 2.75rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
 }
 
-.hero-content p {
-  font-size: 1.25rem;
+.hero-text p {
+  font-size: 1.2rem;
   color: #cbd5e1;
-  max-width: 650px;
-  margin: 0 auto 2rem;
+  max-width: 600px;
+  margin-bottom: 1.75rem;
+}
+
+/* Stack vertically on mobile screens */
+@media (max-width: 768px) {
+  .hero-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-large-logo {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .section {
